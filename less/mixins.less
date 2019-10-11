@@ -1,1 +1,20 @@
 // Mixins Here
+.center(){
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.button-primary(@btn-bg-color, @wild-sand){
+    width: @width;
+    height:@height;
+    background-color: @btn-bg-color;
+    .center();
+    color:@wild-sand;
+}
+
+&:hover{
+background-color:@btn-bg-color;
+color:@wild-sand
+}
+
