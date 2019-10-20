@@ -160,6 +160,10 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  width: 100%;
+  background-color: #F6F6F6;
+}
 .nav {
   display: flex;
   flex-direction: row;
@@ -184,6 +188,10 @@ nav .nav{
   nav .nav {
     width: 80%;
   }
+}
+nav .nav h1 {
+  font-size: 3rem;
+  margin: 20px 0;
 }
 .nav h1 {
   font-size: 3em;
