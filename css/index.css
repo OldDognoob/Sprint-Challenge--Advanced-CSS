@@ -174,6 +174,9 @@ p {
 nav .nav{
   width: 800px;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 
@@ -197,6 +200,18 @@ nav .nav{
   color: black;
   margin: 20px;
   padding-bottom: 15px;
+}
+nav .nav .navigation {
+  width: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0;
+}
+nav .nav .navigation a {
+  color: black;
+  font-size: 1.4rem;
+  text-decoration: none;
 }
 footer {
   color: #22283B;
@@ -225,6 +240,9 @@ footer {
   .home .space-images .sky {
      display: none;
   }
+}
+.home .intro img {
+  border-radius: 5px;
 }
 .home .intro p {
   padding: 0 15px;
@@ -282,6 +300,25 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: #22283a;
+}
+.home .walk .walk-text .btn {
+  height: 40px;
+  width: 100px;
+  color: white;
+  font-size:1.8rem;
+  background-color: #22283a;
+  padding: 10px 0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 @media only screen and (max-width:500px){
   .home .walk .walk-text .btn {
     height: 70px;
@@ -309,7 +346,7 @@ footer {
     width: 100%;
     margin: 0 auto;
   }
-}
+
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
