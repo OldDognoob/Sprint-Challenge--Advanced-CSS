@@ -4,6 +4,10 @@
 
   .intro {
 
+    img {
+      border-radius: 5px;
+    }
+
     h2 {
       padding: 15px;
     }
@@ -24,6 +28,10 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+
+    @media @phone {
+      width: 100%;
     }
   }
 
@@ -58,14 +66,8 @@
       }
 
       .btn {
-        .button-primary(@btn-bg-color, @wild-sand ) 
+          .btn(40px,100px);
         }
-        &:hover{
-          background-color:@btn-bg-color;
-          color:@wild-sand
-          }
-          
-      }
     }
 
     .walk-img {

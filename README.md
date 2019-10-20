@@ -58,13 +58,13 @@ The `font-size: 62.5%` ends up to rewrite all the font sizes in our web pages.
 4. How would you describe preprocessing to someone new to CSS?
 
 
-Preprocessing is a programm that process a number of data to produce an output where this ouput can be used as input to another program.
+Preprocessing is the technique of introducing a different syntax of CSS based on desire preferences that automatically can be compile to make web pages readable to people.
 
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
-My favorite concept in processing is to write cleaner syntax, organizing code, write smaler code functions. 
-My biggest nightmare is compiling.
+My favorite concept is the nesting method in Less. Its useful and managable the way of nesting. I finding difficult the media files and the import files. In time maybe I ll find them easy to understand them and to use them in appropriate way.
+
 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
