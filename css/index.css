@@ -140,6 +140,14 @@ html,
 body {
   font-family: 'Ubuntu', sans-serif;
   color: #5E6164;
+  width: 90%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 500px) {
+  html,
+  body {
+    width: 100%;
+  }
 }
 h1,
 h2,
@@ -165,16 +173,16 @@ p {
   margin: 0 auto;
 }
 nav {
-  width: 800px;
+  width: 100%;
   background-color: #F6F6F6;
 }
 @media only screen and (max-width: 500px) {
-  nav nav {
+  nav {
     width: 100%;
   }
 }
 nav .nav {
-  width: 800px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -238,7 +246,7 @@ footer {
   height: 100%;
 }
 @media only screen and (max-width: 500px) {
-  .home .space-images {
+  .home .space-images img {
     width: 100%;
   }
 }
@@ -276,7 +284,7 @@ footer {
   }
 }
 .home .walk .walk-text {
-  width: 50%;
+  width: 100%;
 }
 @media only screen and (max-width: 500px) {
   .home .walk .walk-text {
