@@ -1,0 +1,96 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpaceWalkers</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <nav>
+    <div class='nav'>
+       <h1> SpaceWalkers</h1>
+       <div class='navigation'>
+         <a href="index.html">Home</a>
+         <a href="#">About Us</a>
+         <a href="#">Blog</a>
+         <a href="contactForm.html">Contact</a>
+         <a href="signForm.html">Sign In</a>
+        </div>
+    </div>
+  </nav>
+  <div class="container home">
+
+    <header class="intro">
+      <img src="./img/main-header.png" class="headerpic" alt="earth from space">
+      <h2>Sign up</h2>
+
+      <p>Space the final frontier for man and for you to cross it, to be able to explore new worlds, 
+        to seek new speacies but most of all to learn space. If you want to be part of new adventures on space ,
+        come along with us to explore and communicate with different new planets.
+      <h3 class = "sign-in">Let's engaged !</h3>
+      </p>
+    </header>
+    <section class="space-images">
+            <img src="img/blast.png" class="blast" alt="Rocket blasting off">
+            <img src="img/sky.png" class="sky" alt="Space sky image">
+            <img src="img/launch.png" class="launch" alt="Launching rocket">
+        </section>
+    <section class="walk">
+      <div class="walk-text">
+        <form action="/action_page.php">
+          <div class="container">
+            <h1 class= "register">Register</h1>
+            <p>Use the space form to become member fo our Space Team</p>
+            <hr>
+        
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+        
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+            <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me</label>
+            <hr>
+            <p>Your account is authorized by Space Council <a href="#">Terms & Privacy</a>.</p>
+        
+            <button type="submit" class="registerbtn">Register</button>
+          </div>
+          <div class="clearfix">
+            <button type="button" class="cancelbtn">Cancel</button>
+             <button type="submit" class="signupbtn">Sign Up</button>
+          </div>
+          <div class="container signin">
+            <p>Already member of our Space Team <a href="#">Sign in</a>.</p>
+          </div>
+        </form>
+        
+        
+      </div>
+
+      <div class="walker-img">
+      </div>
+
+    </section>
+
+    <footer>
+      <p>Copyright SpaceWalkers 2018</p>
+    </footer>
+
+  </div>
+</body>
+
+</html>

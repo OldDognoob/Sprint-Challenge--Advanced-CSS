@@ -1,0 +1,86 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpaceWalkers Magazine</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+   <nav>
+    <div class='nav'>
+        <h1> SpaceWalkers</h1>
+        <div class='navigation'>
+          <a href="index.html">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Blog</a>
+          <a href="contactForm.html">Contact</a>
+          <a href="signForm.html">Sign In</a>
+        </div>
+     </div>
+  </nav>
+  <div class="container home">
+
+    <header class="intro">
+      <img src="./img/main-header.png" class="headerpic" alt="earth from space">
+      <h2>Contact us</h2>
+
+      <p> Fell free to leave your comments below or contacting with us to make your journey in Space exciting
+      <h3 class = "sign-in">Please, give us your thoughts below:</h3>
+      </p>
+    </header>
+    <section class="space-images">
+            <img src="img/blast.png" class="blast" alt="Rocket blasting off">
+            <img src="img/sky.png" class="sky" alt="Space sky image">
+            <img src="img/launch.png" class="launch" alt="Launching rocket">
+        </section>
+    <section class="walk">
+      <div class="walk-text">
+        <div class="container">
+        <form action="/action_page.php">
+          <label for="fname"><p>First Name:</p></label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+          <label for="lname"><p class = "form-span">Email:</p></label>
+          <input class ="mail" type="email" id="email" name="email" placeholder="Your email..">
+
+          <label for="country"><p class= "form-span">Your location:</p></label>
+          <select id="country" name="country">
+            <option value="australia">Europe</option>
+            <option value="canada">USA</option>
+            <option value="usa">JAPAN</option>
+            <option value="asia">CHINA</option>
+            <option value="africa">Africa</option>
+          </select>
+          <label for="subject"> <p>Subject:</p></label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+        
+        
+      </div>
+
+      <div class="walker-img">
+      </div>
+
+    </section>
+
+    <footer>
+      <p>Copyright SpaceWalkers 2018</p>
+    </footer>
+
+  </div>
+</body>
+
+</html>
