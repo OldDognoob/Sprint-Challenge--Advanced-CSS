@@ -157,6 +157,8 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
+  padding: 20px;
+  font-size: 30px;
 }
 h2 {
   font-size: 3.2rem;
