@@ -1,4 +1,4 @@
-// Mixins Here
+// Mixins & Parametric mixins Here
 
 &:hover{
 background-color:white;
@@ -31,11 +31,12 @@ color:@btn-bg-color;
     justify-content: center;
 }
 
-// Animation styles//
 
-@keyframes shake-horizontal {
-    0%,
-    100% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-    }
+.center-text(@justify,@align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+  }
+
+
+// Animation styles//
