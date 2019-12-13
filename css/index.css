@@ -1,7 +1,4 @@
-:hover {
-  background-color: white;
-  color: #22283A;
-}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -143,7 +140,6 @@ body {
   width: 90%;
   margin: 0 auto;
 }
-/* Mobile screen viewers*/
 @media only screen and (max-width: 500px) {
   html,
   body {
@@ -157,14 +153,13 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
-  padding: 20px;
-  font-size: 30px;
 }
 h2 {
   font-size: 3.2rem;
 }
 h3 {
   font-size: 2.8rem;
+  padding: 30px;
 }
 p {
   font-size: 1.6rem;
@@ -178,8 +173,15 @@ p {
 nav {
   width: 100%;
   background-color: #F6F6F6;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  opacity: 1.5;
+  /* max-width: 900px; */
 }
-/* Mobile screen viewers*/
 @media only screen and (max-width: 500px) {
   nav {
     width: 100%;
@@ -187,18 +189,23 @@ nav {
 }
 nav .nav {
   width: 100%;
-  padding:20px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f4f4f4;
-  /* position: fixed; */
-  /* z-index: 1; */
-  /* opacity: 0.9; */
+  justify-content: center;
+  
+}
+@media only screen and (max-width: 500px) {
+  nav .nav {
+    justify-content: space-around;
+    width: 100%;
+  }
 }
 nav .nav h1 {
-  font-size: 4.4rem;
-  margin-bottom: 20px 0;
+  font-size: 3.5rem;
+  margin: 20px 0;
+  padding: 15px 0;
 }
 .navigation {
   width: 60%;
@@ -207,7 +214,6 @@ nav .nav h1 {
   justify-content: space-evenly;
   width: 100%;
 }
-/* Mobile screen viewers*/
 @media only screen and (max-width: 500px) {
   .navigation {
     width: 100%;
@@ -216,7 +222,7 @@ nav .nav h1 {
 .navigation a {
   text-decoration: none;
   color: black;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 footer {
   color: #22283B;
@@ -231,7 +237,6 @@ footer {
 .home .intro img {
   border-radius: 5px;
 }
-/* Mobile screen viewers*/
 @media only screen and (max-width: 500px) {
   .home .intro img {
     width: 100%;
@@ -254,19 +259,16 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
-/* Mobile screen viewers*/
 @media only screen and (max-width: 500px) {
   .home .space-images img {
     width: 100%;
   }
 }
-/* Mobile screen viewers*/
 @media only screen and (max-width: 500px) {
   .home .sky {
     display: none;
   }
 }
-/* Mobile screen viewers*/
 @media only screen and (max-width: 500px) {
   .home .launch {
     display: none;
@@ -288,7 +290,6 @@ footer {
   display: flex;
   justify-content: center;
 }
-/* Mobile screen viewers*/
 @media only screen and (max-width: 500px) {
   .home .walk {
     display: flex;
@@ -299,7 +300,6 @@ footer {
 .home .walk .walk-text {
   width: 100%;
 }
-/* Mobile screen viewers*/
 @media only screen and (max-width: 500px) {
   .home .walk .walk-text {
     margin-top: 20px;
@@ -324,7 +324,6 @@ footer {
   text-align: center;
   justify-content: center;
 }
-/* Mobile screen viewers*/
 @media only screen and (max-width: 500px) {
   .home .walk .walk-text .btn {
     height: 40px;
@@ -344,7 +343,6 @@ footer {
   width: 46%;
   margin-left: 4%;
 }
-/* Mobile screen viewers */
 @media only screen and (max-width: 500px) {
   .home .walk .walk-img {
     width: 100%;
@@ -356,116 +354,74 @@ footer {
   height: auto;
   border-radius: 10px;
 }
-/* Full-width input fields */
-input[type=text], input[type=password] {
+form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  padding-top: 6%;
+}
+.form-span {
+  margin-top: 1%;
+  font-size: 1.6rem;
+}
+textarea {
+  margin-bottom: 4%;
+}
+.container {
+  padding: 16px;
+  background-color: white;
+}
+a {
+  color: dodgerblue;
+}
+input[type="text"],
+input[type="password"] {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
-  background: #f1f1f1;
+  background: #e6dfdf;
 }
-
-input[type=text]:focus, input[type=password]:focus {
+input[type="text"]:focus,
+input[type="password"]:focus {
   background-color: #ddd;
   outline: none;
 }
-
 hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
 }
-
-/* Set a style for all buttons */
-button {
-  background-color: blue;
-  color: white;
-  padding: 14px 20px;
+.registerbtn {
+  background: rgb(20, 38, 92);
+  color: #F6F7F8;
+  padding: 16px 20px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
   width: 100%;
   opacity: 0.9;
 }
-
-button:hover {
-  opacity:2;
+.registerbtn:hover {
+  background-color: rgb(17, 129, 240);
 }
-
-/* Extra styles for the cancel button */
-.cancelbtn {
-  padding: 14px 20px;
-  background-color:lightgrey;
+.register {
+  font-size: 3rem;
+  padding-bottom: 4%;
 }
-
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
-  float: left;
-  width: 50%;
+.registerbtn:hover {
+  opacity: 1;
 }
-
-/* Add padding to container elements */
-.container {
-  padding: 16px;
+.signin {
+  background-color: rgb(113, 216, 250);
+  text-align: center;
 }
-
-/* Clear floats */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+input[type=text] {
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
 }
-
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-  .cancelbtn, .signupbtn {
-    width: 100%;
-  }
-}
-
-/* Contact Form formation */
-input[type=text], select, textarea {
-  width: 100%; 
-  padding: 12px; 
-  border: 1px solid #ccc; 
-  border-radius: 4px; 
-  box-sizing: border-box; 
-  margin-top: 6px; 
-  margin-bottom: 16px; 
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: rgb(52, 50, 172);
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #23a2f7;
-}
-
-/* Subscribe Newsletter form*/
-
-form {
-  border: 4px solid #f1f1f1;
-}
-input[type=text], input[type=submit] {
+input[type=text]:focus {
   width: 100%;
-  padding: 12px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-input[type=checkbox] {
-  margin-top: 16px;
-}
-
-input[type=submit]:hover {
-  opacity: 0.8;
-}
+} 
